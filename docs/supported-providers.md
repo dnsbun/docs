@@ -2,11 +2,11 @@
 icon: lucide/network
 ---
 
-# Supported outbound services
+# Supported providers
 
-DNSbun supports the DNS services available through
+DNSbun supports the DNS providers available through
 [ddns-updater](https://github.com/qdm12/ddns-updater). You can configure one or
-more of these services as destinations, then update all of them with a single
+more of these providers as destinations, then update all of them with a single
 request to DNSbun.
 
 ## A–D

@@ -11,7 +11,7 @@ edit_uri = "edit/main/docs/"
 nav = [
   { "Back to Website" = "https://dnsbun.com/" },
   { "Home" = "index.md" },
-  { "Supported services" = "supported-services.md" },
+  { "Supported providers" = "supported-providers.md" },
 ]
 
 [project.theme]

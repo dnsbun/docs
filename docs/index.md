@@ -32,18 +32,18 @@ flowchart LR
 
 - **Configure your updater once.** Point it at DNSbun instead of maintaining a
   separate setup for every provider.
-- **Update multiple services together.** One request can update records across
-  all of your configured DNS services.
+- **Update multiple providers together.** One request can update records across
+  all of your configured DNS providers.
 - **Keep providers independent.** A problem with one destination does not stop
   DNSbun from updating the others.
 - **See what happened.** Each destination has its own update result, making
   failures easier to find and fix.
 
-## Supported outbound services
+## Supported providers
 
-DNSbun can relay updates to more than 50 DNS services, including Cloudflare,
+DNSbun can relay updates to more than 50 DNS providers, including Cloudflare,
 DigitalOcean, DuckDNS, Gandi, Hetzner, Namecheap, Porkbun, Route 53, and many
-more. See the [full list of supported services](supported-services.md).
+more. See the [full list of supported providers](supported-providers.md).
 
 !!! note
 
