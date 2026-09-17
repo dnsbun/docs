@@ -4,6 +4,12 @@ icon: lucide/rabbit
 
 # DNSbun documentation
 
+!!! info "DNSbun is under construction"
+
+    We are currently evaluating how many people need a DDNS fan-out relay like
+    DNSbun. If you are interested, [join the waitlist](https://dnsbun.com/#waitlist)
+    to help us understand demand and hear when early access opens.
+
 [DNSbun](https://dnsbun.com/) is a dynamic DNS (DDNS) fan-out relay. Send your
 IP update to DNSbun once, and it updates every DNS service you have configured.
 Instead of setting up your router or update client separately for every
