@@ -1,5 +1,5 @@
 [project]
-site_url = "https://dnsbun.github.io/docs/"
+site_url = "https://docs.dnsbun.com/"
 site_name = "DNSbun Documentation"
 site_description = "Documentation for DNSbun, the hosted dynamic DNS fan-out service."
 site_author = "DNSbun"
