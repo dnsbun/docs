@@ -1,3 +1,5 @@
+.idea/
+
 .venv/
 site/
 __pycache__/
