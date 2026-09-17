@@ -9,8 +9,9 @@ repo_name = "dnsbun/docs"
 edit_uri = "edit/main/docs/"
 
 nav = [
-  { "Back to Website" = "https://dnsbun.com/" },
+  { "Back to the website" = "https://dnsbun.com/" },
   { "Home" = "index.md" },
+  { "Inbound API formats" = "inbound-api-formats.md" },
   { "Supported providers" = "supported-providers.md" },
 ]
 
