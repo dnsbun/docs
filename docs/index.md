@@ -4,10 +4,10 @@ icon: lucide/rabbit
 
 # DNSbun documentation
 
-DNSbun is a dynamic DNS (DDNS) fan-out relay. Send your IP update to DNSbun
-once, and it updates every DNS service you have configured. Instead of setting
-up your router or update client separately for every provider, you only need to
-point it at DNSbun.
+[DNSbun](https://dnsbun.com/) is a dynamic DNS (DDNS) fan-out relay. Send your
+IP update to DNSbun once, and it updates every DNS service you have configured.
+Instead of setting up your router or update client separately for every
+provider, you only need to point it at DNSbun.
 
 ## One update, every destination
 
