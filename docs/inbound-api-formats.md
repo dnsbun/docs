@@ -50,7 +50,9 @@ User-Agent: ExampleRouter/1.0
 ```
 
 The endpoint is available at `https://update.dnsbun.com/nic/update`. See the
-[router guides](router-guides/index.md) for device-specific setup instructions.
+[DNS-O-Matic migration guide](migrate-from-dns-o-matic.md) when moving an
+existing client, or the [router guides](router-guides/index.md) for
+device-specific setup instructions.
 
 ## Future formats
 

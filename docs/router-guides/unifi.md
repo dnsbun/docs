@@ -15,14 +15,15 @@ create a new Dynamic DNS entry. Enter these values:
 | Field | Value |
 | --- | --- |
 | Service | `Dyndns` |
-| Hostname | Your record, for example `home.example.com` |
+| Hostname | `all.dnsomatic.com` to update all configured destinations |
 | Username | Your DNSbun username |
 | Password | Your DNSbun password |
 | Server | `update.dnsbun.com/nic/update?hostname=%h&myip=%i` |
 
 Save the entry after checking that:
 
-- **Hostname** contains the DNS record you want to update, not
+- **Hostname** is `all.dnsomatic.com` to target all destinations, or contains a
+  specific fully qualified DNS record. It must not contain
   `https://update.dnsbun.com`.
 - **Server** does not include an `https://` prefix.
 - The `%h` and `%i` placeholders are entered literally. Inadyn replaces them
@@ -57,8 +58,9 @@ Also confirm that the username, password, and hostname fields are not empty.
 
 ### The wrong hostname is sent
 
-The **Hostname** field must be a fully qualified DNS name such as
-`home.example.com`. Do not enter the DNSbun API address in that field.
+Use `all.dnsomatic.com` to target all destinations. To target a specific
+record, enter its fully qualified DNS name, such as `home.example.com`. Do not
+enter the DNSbun API address in that field.
 
 ### The gateway is behind CGNAT
 

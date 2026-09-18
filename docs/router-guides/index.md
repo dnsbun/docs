@@ -37,3 +37,6 @@ update, such as `home.example.com`. It should not contain the DNSbun endpoint.
 Some clients combine the server and update path into one field or require
 placeholders for the hostname and address. Follow the device-specific guide
 when one is available.
+
+If you currently use DNS-O-Matic, see [Migrate from DNS-O-Matic](../migrate-from-dns-o-matic.md)
+for the compatible request behavior and migration settings.
