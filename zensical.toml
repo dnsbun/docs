@@ -12,6 +12,10 @@ nav = [
   { "Back to the website" = "https://dnsbun.com/" },
   { "Home" = "index.md" },
   { "Inbound API formats" = "inbound-api-formats.md" },
+  { "Router guides" = [
+    { "Overview" = "router-guides/index.md" },
+    { "UniFi" = "router-guides/unifi.md" },
+  ] },
   { "Supported providers" = "supported-providers.md" },
 ]
 

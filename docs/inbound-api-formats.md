@@ -8,14 +8,15 @@ An inbound API format defines how a router, firewall, NAS, or DDNS client sends
 an IP address update to DNSbun. DNSbun receives that single request and relays
 the update to the DNS providers configured in your account.
 
-!!! info "Planned compatibility"
+!!! info "Early preview"
 
-    DNSbun is still under construction. This page describes our compatibility
-    targets, not an API that is available today.
+    The update endpoint is available for integration testing. It currently
+    validates and logs requests, but does not change DNS records. Valid requests
+    receive a `nochg` response while the update pipeline is under development.
 
-## First target: DNS-O-Matic
+## First supported format: DNS-O-Matic
 
-Our first target is compatibility with the
+Our first supported format follows the
 [DNS-O-Matic](https://dnsomatic.com/) API format. DNS-O-Matic has announced to
 its users that the service will be discontinued soon. Supporting its familiar
 request format first should give existing users, routers, and update clients a
@@ -24,9 +25,9 @@ straightforward migration path to DNSbun.
 DNS-O-Matic's format is also a natural fit for DNSbun: both services accept one
 DDNS update and distribute it to multiple configured destinations.
 
-## Planned request shape
+## Current request shape
 
-We are targeting the core behavior described in the
+DNSbun implements the core behavior described in the
 [DNS-O-Matic API documentation](https://dnsomatic.com/docs/api):
 
 - Updates sent over HTTPS.
@@ -48,8 +49,8 @@ Authorization: Basic <credentials>
 User-Agent: ExampleRouter/1.0
 ```
 
-The final endpoint, credential flow, parameter behavior, and response semantics
-will be documented before early access opens.
+The endpoint is available at `https://update.dnsbun.com/nic/update`. See the
+[router guides](router-guides/index.md) for device-specific setup instructions.
 
 ## Future formats
 
