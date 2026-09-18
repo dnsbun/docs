@@ -8,12 +8,6 @@ An inbound API format defines how a router, firewall, NAS, or DDNS client sends
 an IP address update to DNSbun. DNSbun receives that single request and relays
 the update to the DNS providers configured in your account.
 
-!!! info "Early preview"
-
-    The update endpoint is available for integration testing. It currently
-    validates and logs requests, but does not change DNS records. Valid requests
-    receive a `nochg` response while the update pipeline is under development.
-
 ## First supported format: DNS-O-Matic
 
 Our first supported format follows the

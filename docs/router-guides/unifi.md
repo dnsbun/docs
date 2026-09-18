@@ -35,14 +35,13 @@ Inadyn uses HTTPS by default, so credentials are sent to
 ## Verify the request
 
 After saving, UniFi should send an update when it detects a WAN address change.
-During DNSbun's early preview, a valid request is logged and receives:
+A valid request receives a DynDNS-compatible response such as:
 
 ``` text
 nochg <address>
 ```
 
-This response currently confirms that DNSbun received and parsed the request;
-DNS records are not changed yet.
+This response confirms that DNSbun received and parsed the request.
 
 ## Troubleshooting
 

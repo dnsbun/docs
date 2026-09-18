@@ -8,12 +8,6 @@ Configure your router or firewall to send one dynamic DNS update to DNSbun.
 DNSbun accepts the familiar DynDNS-compatible `/nic/update` request format at
 `update.dnsbun.com`.
 
-!!! info "Early preview"
-
-    The endpoint currently validates and logs update requests but does not
-    change DNS records. It returns `nochg` for valid requests while the update
-    pipeline is under development.
-
 ## Available guides
 
 - [UniFi](unifi.md)

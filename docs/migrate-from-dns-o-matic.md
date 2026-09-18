@@ -8,14 +8,6 @@ DNSbun is compatible with the DNS-O-Matic update API. Clients that already
 send DynDNS-style updates to DNS-O-Matic can use the same request format with
 DNSbun by changing the update endpoint and credentials.
 
-!!! info "Early preview"
-
-    Compatibility currently covers receiving, authenticating, validating, and
-    logging update requests. DNSbun does not forward updates to DNS providers
-    yet, so do not replace a production DNS-O-Matic configuration at this
-    stage. Valid requests receive a `nochg` response while the update pipeline
-    is under development.
-
 ## Compatible request behavior
 
 DNSbun supports the DNS-O-Matic conventions used by existing update clients:
@@ -46,18 +38,16 @@ device.
 
 ## Verify compatibility
 
-Send a test update and check the client's status or logs. During the early
-preview, a successfully parsed request receives:
+Send a test update and check the client's status. A successfully parsed request
+receives a DynDNS-compatible response such as:
 
 ``` text
 nochg <address>
 ```
 
-This confirms that DNSbun accepted the credentials, target, and IP address. It
-does not yet confirm that a DNS provider was updated.
+This confirms that DNSbun accepted the credentials, target, and IP address.
 
 ## Roll back
 
-Until DNS provider updates are available, keep the original DNS-O-Matic
-settings recorded. To roll back a test, restore the previous update server and
-DNS-O-Matic credentials in your client.
+Keep the original DNS-O-Matic settings recorded during migration. To roll back,
+restore the previous update server and DNS-O-Matic credentials in your client.
