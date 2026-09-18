@@ -57,10 +57,9 @@ Also confirm that the username, password, and hostname fields are not empty.
 
 ### The wrong hostname is sent
 
-Use `all.dnsbun.com` to target all destinations. DNSbun also accepts
-`all.dnsomatic.com` for compatibility with existing DNS-O-Matic configurations.
-To target a specific record, enter its fully qualified DNS name, such as
-`home.example.com`. Do not enter the DNSbun API address in that field.
+Use `all.dnsbun.com` to target all destinations. To target a specific record,
+enter its fully qualified DNS name, such as `home.example.com`. Do not enter the
+DNSbun API address in that field.
 
 ### The gateway is behind CGNAT
 
