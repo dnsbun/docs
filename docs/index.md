@@ -55,3 +55,8 @@ more. See the [full list of supported providers](supported-providers.md).
 
     DNSbun does not host your DNS zone. It connects your DDNS client to the DNS
     providers that remain authoritative for your domains.
+
+## Configure your router
+
+Device-specific instructions are available in the [router guides](router-guides/index.md),
+starting with [UniFi gateways](router-guides/unifi.md).
