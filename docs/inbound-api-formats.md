@@ -43,7 +43,7 @@ A compatible request will follow this general shape:
 
 ``` http
 GET /nic/update?hostname=home.example.com&myip=192.0.2.10 HTTP/1.1
-Host: api.dnsbun.com
+Host: update.dnsbun.com
 Authorization: Basic <credentials>
 User-Agent: ExampleRouter/1.0
 ```
