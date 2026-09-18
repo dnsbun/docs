@@ -29,6 +29,7 @@ DNSbun implements the core behavior described in the
 - `GET` and `POST` update requests.
 - The familiar `/nic/update` path.
 - A `hostname` parameter identifying what should be updated.
+- The `all.dnsbun.com` target for all configured destinations.
 - An optional `myip` parameter containing the new IP address. When it is
   omitted, DNSbun should detect the address from the request where possible.
 - Short text responses familiar to existing DDNS clients, such as `good`,

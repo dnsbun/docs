@@ -14,7 +14,9 @@ DNSbun supports the DNS-O-Matic conventions used by existing update clients:
 
 - HTTPS requests using HTTP Basic authentication.
 - `GET` and form-encoded `POST` requests to `/nic/update`.
-- An `all.dnsomatic.com` hostname target for all configured destinations.
+- The DNSbun `all.dnsbun.com` hostname target for all configured destinations.
+- The DNS-O-Matic `all.dnsomatic.com` hostname target as a backwards-compatible
+  alias.
 - An omitted hostname as another way to target all configured destinations.
 - A comma-separated hostname list for clients that update specific records.
 - DynDNS-compatible response codes.
@@ -27,7 +29,7 @@ settings with the following values:
 | Setting | DNSbun value |
 | --- | --- |
 | Update endpoint | `https://update.dnsbun.com/nic/update` |
-| Hostname for all destinations | `all.dnsomatic.com` |
+| Hostname for all destinations | `all.dnsbun.com` |
 | Username | Your DNSbun username |
 | Password | Your DNSbun password |
 
@@ -35,6 +37,9 @@ Some clients have separate server and path fields, while others require the
 path and parameter placeholders in a single field. See the
 [router guides](router-guides/index.md) for the exact fields supported by your
 device.
+
+Existing clients configured with `all.dnsomatic.com` do not need to change
+that value. DNSbun treats it as an alias for `all.dnsbun.com`.
 
 ## Verify compatibility
 
