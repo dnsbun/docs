@@ -15,14 +15,14 @@ create a new Dynamic DNS entry. Enter these values:
 | Field | Value |
 | --- | --- |
 | Service | `Dyndns` |
-| Hostname | `all.dnsomatic.com` to update all configured destinations |
+| Hostname | `all.dnsbun.com` to update all configured destinations |
 | Username | Your DNSbun username |
 | Password | Your DNSbun password |
 | Server | `update.dnsbun.com/nic/update?hostname=%h&myip=%i` |
 
 Save the entry after checking that:
 
-- **Hostname** is `all.dnsomatic.com` to target all destinations, or contains a
+- **Hostname** is `all.dnsbun.com` to target all destinations, or contains a
   specific fully qualified DNS record. It must not contain
   `https://update.dnsbun.com`.
 - **Server** does not include an `https://` prefix.
@@ -57,9 +57,10 @@ Also confirm that the username, password, and hostname fields are not empty.
 
 ### The wrong hostname is sent
 
-Use `all.dnsomatic.com` to target all destinations. To target a specific
-record, enter its fully qualified DNS name, such as `home.example.com`. Do not
-enter the DNSbun API address in that field.
+Use `all.dnsbun.com` to target all destinations. DNSbun also accepts
+`all.dnsomatic.com` for compatibility with existing DNS-O-Matic configurations.
+To target a specific record, enter its fully qualified DNS name, such as
+`home.example.com`. Do not enter the DNSbun API address in that field.
 
 ### The gateway is behind CGNAT
 
