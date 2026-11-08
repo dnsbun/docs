@@ -28,6 +28,11 @@ jobs:
         with:
           python-version: "3.x"
       - run: pip install zensical==0.0.62
+      - name: Configure PostHog
+        env:
+          POSTHOG_PROJECT_TOKEN: ${{ vars.POSTHOG_PROJECT_TOKEN }}
+          POSTHOG_HOST: ${{ vars.POSTHOG_HOST }}
+        run: python scripts/render-posthog-config.py
       - run: zensical build --clean --strict
       - uses: actions/upload-pages-artifact@v5
         with:

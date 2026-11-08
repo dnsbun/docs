@@ -8,6 +8,11 @@ repo_url = "https://github.com/dnsbun/docs"
 repo_name = "dnsbun/docs"
 edit_uri = "edit/main/docs/"
 
+extra_javascript = [
+  "javascripts/posthog-config.js",
+  "javascripts/posthog.js",
+]
+
 nav = [
   { "Back to the website" = "https://dnsbun.com/" },
   { "Home" = "index.md" },
