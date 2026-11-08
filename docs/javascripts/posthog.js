@@ -1,7 +1,8 @@
 (function initializePostHog(documentObject, posthog) {
-  const config = window.__DNSBUN_POSTHOG_CONFIG__;
+  const projectToken = "phc_z3ZADhVWNE7hSK7TFe68cx8co8uGwPHk5yU3TacUQ56C";
+  const apiHost = "https://t.dnsbun.com";
 
-  if (!config?.projectToken || !config?.apiHost) {
+  if (window.location.hostname !== "docs.dnsbun.com") {
     return;
   }
 
@@ -132,8 +133,8 @@
     posthog.__SV = 1;
   }
 
-  posthog.init(config.projectToken, {
-    api_host: config.apiHost,
+  posthog.init(projectToken, {
+    api_host: apiHost,
     defaults: "2026-08-30",
     capture_pageview: "history_change",
     capture_pageleave: true,

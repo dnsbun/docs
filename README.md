@@ -22,8 +22,7 @@ The generated site is written to `site/`.
 ## Analytics
 
 Production builds load PostHog through the DNSbun first-party analytics proxy.
-The GitHub Pages workflow reads the public configuration from the
-`POSTHOG_PROJECT_TOKEN` and `POSTHOG_HOST` repository variables and renders it
-into the site before building. Local builds leave analytics disabled by
-default.
+The public project token and ingestion host are configured in the client-side
+script. Analytics only initializes on `docs.dnsbun.com`, so local builds do not
+send events.
 

@@ -9,7 +9,6 @@ repo_name = "dnsbun/docs"
 edit_uri = "edit/main/docs/"
 
 extra_javascript = [
-  "javascripts/posthog-config.js",
   "javascripts/posthog.js",
 ]
 
